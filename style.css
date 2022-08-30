@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 100px;   
+}
+
+#wrapper {
+	width: 65%;
+	margin: 0 auto;
+}
+
+header {
+    background-color: #090133;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 2px 2px 5px rgb(250, 6, 6);
+
+}
+
+#brand {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 2px;
+    float: left;
+    padding: 10px;
+}
+
+header>h1 {
+    float: left;
+    position: relative;
+    color:white;
+    font-weight: 1000;
+    top: 1px; 
+    font-size: 300%
+}
+
+#contact {
+    float: right;
+    padding: 10px 10px;
+    position: relative; 
+    top: 80px;
+    margin: 0;
+    font-family: 'Times New Roman', Georgia, serif;
+    font-size: 15px;
+    color:white;
+}
+
+.modal {
+    background-color: rgba(12, 35, 240, 0.486);
+    width: 100%;
+    height: 100%;
+    padding-top: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.modal-content {
+    background-color: #faf4f4;
+    margin: hidden;
+    padding: 50px;
+    border: 1px solid #888;
+    width: 50%;
+left-margin:30%;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.close:hover, .close:focus {
+    color: #bbb ;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav {
+    overflow: hidden;
+    float: left;
+    position: relative;
+    top: 40px;
+    padding-left: 250px;
+    padding-right: 20px 
+    
+}
+
+.topnav  {
+    overflow: hidden;
+    float: left;
+}
+
+.topnav>.nav-item {
+    text-decoration: none;
+    padding: 10px;
+    color:white;
+    display: inline-block;
+    font-family: 'Times New Roman', Georgia, serif;
+    font-size: 115%
+}
+
+.topnav>.nav-item.active {
+    color: red;
+}
+
+.topnav>.nav-item:hover {
+    color: #5d07e7;
+}
+
+.topnav>.nav-item.active:hover {
+    color: rgb(11, 75, 214);
+}
+
+.topnav.icon {
+    display: none;
+}
+
+main {
+    background-color: rgba(249, 249, 250, 0.801);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px;
+    font-family: 'Times New Roman', Georgia, serif;
+    font-weight: 300px;
+}
+
+.container>img {
+    width: 100%; 
+    border: 1px solid #bbb;
+    box-shadow: 1px 1px 4px rgb(68, 68, 68);
+}
+
+
+.container>h3 {
+    font-size: 30px;
+}
+
+.scent-box {
+    width: 25%;
+    overflow: hidden;
+    float: left;
+    display: block;
+    padding: 20px;
+}
+
+.feedback {
+    width: 50%;
+    
+    float: left;
+}
+
+.image-box {
+    width: 95%;
+    margin: 2.5%;
+    margin-bottom: 0;
+    border: 1px solid #bbb;
+    border-bottom: 0;
+    box-shadow: 1px 1px 4px rgb(68, 68, 68);    
+}
+
+.image-box>img {
+    width: 100%;
+}
+
+.image-box>img:hover {
+	cursor: pointer;
+}
+
+.mini-desc {
+    width: 95%;
+    margin: 2.5%;
+    margin-top: 0;
+    height: 50px;
+    border: 1px solid rgb(250, 7, 7);
+    border-top: 0;
+    background-color: #020b3b;
+    box-shadow: 1px 1px 4px rgb(252, 4, 4);
+    color: white;    
+    
+}
+
+
+footer {
+    padding: 25%;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: rgba(250, 248, 248, 0.418);
+    overflow: hidden;
+}
+
+#iframe{
+    align: left;
+    padding: 25%;
+}  
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.prev, .next {
+    cursor: pointer;
+    align:center;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color:black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    overflow:visible;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    overflow: visible;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .topnav>.nav-item.active:hover {
+    color: rgb(11, 75, 214);
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+
+overflow: visible;
+-webkit-tap-highlight-color: transparent;
+  margin: 0 auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  overflow: visible;
+}
+
+.mySlides:nth-of-type(1) {
+    display: block;
+}
+
+.offer-price {
+    text-decoration-line: line-through; 
+}

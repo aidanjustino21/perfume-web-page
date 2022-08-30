@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>SCENT</title>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <link rel="stylesheet" href="./../style.css" type="text/css">
+		
+        <link rel="stylesheet" media="screen and (max-width: 820px)" href="./../style-navbar.css" type="text/css">
+		<link rel="stylesheet" media="screen and (max-width: 600px)" href="./../style-mobile.css" type="text/css">
+		<link rel="stylesheet" media="screen and (max-width: 1100px) and (min-width: 800px)" href="./../style-3x.css" type="text/css">
+		<link rel="stylesheet" media="screen and (max-width: 800px)" href="./../style-2x.css" type="text/css">
+        <link rel="stylesheet" href="index.html">
+        <link rel="stylesheet" href="index1.html">
+        <link rel="stylesheet" href="index2.html">
+        <link rel="stylesheet" href="index3.html">
+		<link rel="stylesheet" href="index4.html">
+		<link rel="stylesheet" href="index5.html">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,300" rel="stylesheet">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="baba.jpg" alt="brand" id="brand" title="logo of the company">
+            <h1>SCENT</h1>
+            <div class="hamburger-container" onclick="myFunction()">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+            <p id="contact" title="service number of the comoany">TelNo. 07459053960</p>
+            <nav>
+                <div class="nav">
+                    <div class="topnav" id="myTopnav">
+                        <a href="./../index.html" class="nav-item" title="home">HOME</a>
+                        <a href="./../men/index.html" class="nav-item" title="mens">MEN</a>
+                        <a href="./../women/index.html" class="nav-item" title="womens">WOMEN</a>
+                        <a href="./../gift packs/index.html" class="nav-item active" title="gifts">GIFTS</a>
+                        <a href="./../offers/index.html" class="nav-item" title="offers">OFFERS</a>
+                        <a href="./../contact/index.html" class="nav-item" title="contact">CONTACT</a>
+                    </div>
+                </div>
+            </nav>         
+        </header>
+		
+		
+				<div id="wrapper">
+					<main>
+						<div class="slideshow-container">
+		
+							<!-- Full-width images with number and caption text -->
+							<div class="mySlides fade">
+							  <div class="numbertext">1 / 3</div>
+							  <img src="1.jpg" style="width:100%" title="banner">
+							  <div class="text"></div>
+							</div>
+						  
+							<div class="mySlides fade">
+							  <div class="numbertext">2 / 3</div>
+							  <img src="2.jpg" style="width:100%" title="banner">
+							  <div class="text"></div>
+							</div>
+						  
+							<div class="mySlides fade">
+							  <div class="numbertext">3 / 3</div>
+							  <img src="3.jpg" style="width:100%" title="banner">
+							  <div class="text"></div>
+							</div>
+						  
+							<!-- Next and previous buttons -->
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						  </div>
+						  <br>
+						  
+						  <!-- The dots/circles -->
+						  <div style="text-align:center">
+							<span class="dot" onclick="currentSlide(1)"></span> 
+							<span class="dot" onclick="currentSlide(2)"></span> 
+							<span class="dot" onclick="currentSlide(3)"></span> 
+						  </div>
+						  
+						  
+						  <!-- events -->
+						  <script>
+							  var slideIndex = 1;
+							  showSlides(slideIndex);
+						  
+							  // Next/previous controls
+							  function plusSlides(n) {
+								showSlides(slideIndex += n);
+							  }
+						  
+							  // Thumbnail image controls
+							  function currentSlide(n) {
+								showSlides(slideIndex = n);
+							  }
+						  
+							  function showSlides(n) {
+								var i;
+								var slides = document.getElementsByClassName("mySlides");
+								var dots = document.getElementsByClassName("dot");
+								if (n > slides.length) {slideIndex = 1} 
+								if (n < 1) {slideIndex = slides.length}
+								for (i = 0; i < slides.length; i++) {
+									slides[i].style.display = "none"; 
+								}
+								for (i = 0; i < dots.length; i++) {
+									dots[i].className = dots[i].className.replace(" active", "");
+								}
+								slides[slideIndex-1].style.display = "block"; 
+								dots[slideIndex-1].className += " active";
+							  }
+							
+						  
+						  </script>
+		<script>
+				var slideIndex = 0;
+			showSlides();
+			
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none"; 
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1} 
+				slides[slideIndex-1].style.display = "block"; 
+				setTimeout(showSlides, 2000); // Change image every 2 seconds
+			}
+			</script>
+
+				<div class="container">
+					<h3>Gift Packs</h3>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="4.jpg" alt="Paco Rabbane 50ml Gift Set with cream" class="image" title="Paco Rabbane 50ml Gift Set with cream">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Paco Rabbane 50ml Gift Set with cream <span class="offer-price">£55</span></p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="5.jpg" alt="Paco Rabbane Black XS Gift set" class="image" title="Paco Rabbane Black XS Gift set">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Paco Rabbane Black XS Gift set <span class="offer-price">£50</span></p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="6.jpg" alt="Paco Rabanne
+							Black XS for Women
+							Eau De Toilette 50ml Gift Set" class="image" title="Paco Rabanne
+							Black XS for Women
+							Eau De Toilette 50ml Gift Set">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Paco Rabanne
+								Black XS for Women
+								Eau De Toilette 50ml Gift Set
+								<span class="offer-price">£45</span>.00</p>
+						</div>  
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="7.jpg" alt="Paco Rabanne
+							1 Million For Men
+							Eau De Toilette 50ml Gift Set" class="image" title="Paco Rabanne
+							1 Million For Men
+							Eau De Toilette 50ml Gift Set">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Paco Rabanne
+								1 Million For Men
+								Eau De Toilette 50ml Gift Set
+								<span class="offer-price">£43</span>.00</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="8.jpg" alt="Paco Rabanne
+							Invictus
+							Eau De Toilette 50ml Gift Set" class="image" title="Paco Rabanne
+							Invictus
+							Eau De Toilette 50ml Gift Set">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Paco Rabanne
+								Invictus
+								Eau De Toilette 50ml Gift Set
+								<span class="offer-price">£42</span>.00</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="9.jpg" alt="Yves Saint Laurent
+							YSL Y
+							Eau De Parfum 50ml Gift Set" class="image" title="Yves Saint Laurent
+							YSL Y
+							Eau De Parfum 50ml Gift Set">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Yves Saint Laurent
+								YSL Y
+								Eau De Parfum 50ml Gift Set
+								<span class="offer-price">£55</span>.00</p>
+						</div>  
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="10.jpg" alt="Giorgio Armani
+							Armani Code Profumo
+							Eau De Parfum 60ml Gift Set" class="image" title="Giorgio Armani
+							Armani Code Profumo
+							Eau De Parfum 60ml Gift Set">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Giorgio Armani
+								Armani Code Profumo
+								Eau De Parfum 60ml Gift Set
+								<span class="offer-price">£51</span>.00</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="11.jpg" alt="Ralph Lauren
+							Polo Red
+							Eau De Toilette 75ml Gift Set" class="image" title="Ralph Lauren
+							Polo Red
+							Eau De Toilette 75ml Gift Set">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Ralph Lauren
+								Polo Red
+								Eau De Toilette 75ml Gift Set
+								<span class="offer-price">£35</span>.00</p>
+						</div>  
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="12.jpg" alt="Paco Rabanne
+							Pure XS
+							Eau De Toilette 50ml Gift Set" class="image" title="Paco Rabanne
+							Pure XS
+							Eau De Toilette 50ml Gift Set">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Paco Rabanne
+								Pure XS
+								Eau De Toilette 50ml Gift Set
+								<span class="offer-price">£44</span>.00</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="13.jpg" alt="Versace
+							Eros
+							Eau De Toilette 30ml Gift Set" class="image" title="Versace
+							Eros
+							Eau De Toilette 30ml Gift Set">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Versace
+								Eros
+								Eau De Toilette 30ml Gift Set
+								<span class="offer-price">£30</span>.00</p>
+						</div>  
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="14.jpg" alt="Dolce & Gabbana
+							Light Blue
+							Eau De Toilette 100ml Gift Set" class="image" title="Dolce & Gabbana
+							Light Blue
+							Eau De Toilette 100ml Gift Set">
+						</div>	
+						<div class="mini-desc">
+							<p style="margin:0">Dolce & Gabbana
+								Light Blue
+								Eau De Toilette 100ml Gift Set
+								<span class="offer-price">£55</span>.00</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="15.jpg" alt="Jean Paul Gaultier
+							Classique
+							Eau De Toilette 50ml Gift Set" class="image" title="Jean Paul Gaultier
+							Classique
+							Eau De Toilette 50ml Gift Set">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Jean Paul Gaultier
+								Classique
+								Eau De Toilette 50ml Gift Set
+								<span class="offer-price">£55</span>.00</p>
+						</div>  
+					</div>
+				</div>
+				<div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Lady Million embodies the ideal woman, the best won't ever be enough for her.
+
+								Brilliant, glamorous, femme fatale, excessive, the Lady Million woman creates a flamboyant couple with the 1 Million man! 
+								The perfect gift, this set contains Lady Million EDP 50ml and a nailpolish.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Sensual, Impertinent, Mysterious, Rockn'roll, the Black XS Woman is a rebel Princess.
+
+								The perfect gift, this set contains Black XS For Her EDT 50ml and a 75ml Body Lotion</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>The baroque 'n' roll fragrance for rebel princesses! A radiant, fruity and woody fragrance for a woman who is surprising, sparkling and lives her live to the full. 
+
+								This giftset contains: 
+								50ml Eau de Toilette 
+								10ml Travel Spray </p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Flamboyant, self-confident, daring and irresistible, 1 Million is the expression of every man's fantasies.
+
+								The perfect gift for that one in a million man, this set containts One Million EDT 50ml + a 100ml Shower Gel.
+								
+								Top Notes: Blood Mandarin - Peppermint
+								Heart Notes: Rose Absolute - Cinnamon</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Inhale the scent of victory with Invictus by Paco Rabanne. This sensually fresh scent sets a modern vision of masculinity. Invictus is an unexpected clash of worlds, powers, sensations, and values: a thrill of pure freshness top note facing the sensuality of a guaiac wood base note.
+
+								The perfect gift, this set contains Invictus EDT 50ml, and a Shower Gel 100ml
+								
+								Top Notes: Grapefruit Peel - Marine Accord
+								Heart Notes: Bay Leaves - Guaiac Wood</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Discover Y EAU DE PARFUM by Yves Saint Laurent. An authentic fragrance expression capturing the essence of modern men.
+
+								Y EAU DE PARFUM for men is a light & dark fougère fragrance, featuring fresh citrus and aromatic notes followed by a deeper intensity of sensual woods. It perfectly complements the multifaceted personality traits of the Y man.
+								
+								This gift set includes a Y Eau de Parfum 100ml, a complimentary Y Shower Gel 50ml and a complimentary Y After Shave Balm 50ml.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Treat him to a luxurious Christmas gift set, containing Armani Code Profumo Eau de Parfum 60ml, 75ml Shower Gel 75ml and Armani Code Profumo Travel Spray 15ml - perfectly sized for holidays and his gym bag. Complete in a luxury Armani gift box, this is a perfect gift for your Dad, boyfriend or brother. Treat him to a luxurious Christmas gift set, containing Armani Code Profumo Eau de Parfum 60ml, 75ml Shower Gel 75ml and Armani Code Profumo Travel Spray 15ml - perfectly sized for holidays and his gym bag. Complete in a luxury Armani gift box, this is a perfect gift for your Dad, boyfriend or brother. Treat him to a luxurious Christmas gift set, containing Armani Code Profumo Eau de Parfum 60ml, 75ml Shower Gel 75ml and Armani Code Profumo Travel Spray 15ml - perfectly sized for holidays and his gym bag. Complete in a luxury Armani gift box, this is a perfect gift for your Dad, boyfriend or brother.Treat him to a luxurious Christmas gift set, containing Armani Code Profumo Eau de Parfum 60ml, 75ml Shower Gel 75ml and Armani Code Profumo Travel Spray 15ml - perfectly sized for holidays and his gym bag. Complete in a luxury Armani gift box, this is a perfect gift for your Dad, boyfriend or brother. Gift Set Includes: 
+								Armani Code Profumo Eau de Parfum 60ml 
+								Armani Code Profumo Travel Spray 15ml 
+								Shower Gel 75ml Shop the Giorgio Armani Armani Code  </p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Treat him to a luxurious Christmas gift set, containing Ralph Lauren Polo Red Eau de Toilette 75ml and Polo Red Eau de Toilette Travel Spray 30ml - perfectly sized for holidays and his gym bag. Complete in a luxury Ralph Lauren gift box, this is a perfect gift for your Dad, boyfriend or brother. Gift Set Includes: 
+								Ralph Lauren Polo Red Eau de Toilette 75ml 
+								Ralph Lauren Polo Red Eau de Toilette Travel Spray 30ml Shop the Ralph Lauren Polo Red Eau De Toilette 75ml Gift </p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>The first-born who has also inherited an exceedingly hot physique. Remarkably young, extremely brilliant, insanely wealthy [of course], hugely beautiful. Excess in its purest state. His sex-appeal is disturbing, beyond-control. It would appear he has it all, a pure utopia. Pure desire. Magnetic, excess in its purest state. Explosive freshness and burning sensuality. Robust, manly, irresistible vapours that hover between the purity of raw desire and the pleasure of excess.
+
+								The perfect gift, this set contains Pure XS For Him EDT 50ml and a 100ml Shower Gel.
+								
+								Green Sap - White Thyme - Ginger
+								Cinnamon - Vanilla - Myrrh Shop the Paco Rabanne Pure XS </p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>The Fresh/Oriental/Woody fragrance has intense, vibrant and glowing top notes of mint leaves, lemon zest and green apple. These give way to a sensual heart of ambroxan, geranium and tonka bean which in turn gives way to a base of vanilla, vetiver, oak moss accord and cedarwood.
+
+								As well as a 30ml eau de toilette, this Versace Eros coffret contains a 50ml invigorating shower gel which has a silky-smooth formula that leaves your skin clean, soft, smooth and gently scented with the distinctive Eros fragrance. </p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>A timeless design inspired by the classic Dolce & Gabbana parfum, Light Blue shape is confident but always very feminine. Its light blue cap evokes the clear skies of the Mediterranean. The bottle itself is strong, reflecting today's modern woman.
+								This set contains:
+								- Eau de Toilette 100ml
+								- Eau de Toilette 25ml Shop the Dolce & Gabbana Light Blue </p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Jean Paul Gaultier wishes you a Happy Holiday and invites you to discover this pink and red metal set adorned with the Gaultier snowflake. Here we can also find Classique Eau de Toilette and the perfumed body lotion in a red velvet case.
+
+								50ml Edt, 75ml Body Lotion Shop the Jean Paul Gaultier Classique Eau De Toilette 50ml Gift Set</p>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer>
+				<div class="copyright">
+					<p>&#169; SCENT Perfumes</p>
+				</div>
+			</footer>
+		</div>
+
+        <script src="./../JavaScript.js">
+        </script>
+    </body>
+</html>

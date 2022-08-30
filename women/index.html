@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>SCENT</title>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <link rel="stylesheet" href="./../style.css" type="text/css">
+		
+        <link rel="stylesheet" media="screen and (max-width: 820px)" href="./../style-navbar.css" type="text/css">
+		<link rel="stylesheet" media="screen and (max-width: 600px)" href="./../style-mobile.css" type="text/css">
+		<link rel="stylesheet" media="screen and (max-width: 1100px) and (min-width: 800px)" href="./../style-3x.css" type="text/css">
+		<link rel="stylesheet" media="screen and (max-width: 800px)" href="./../style-2x.css" type="text/css">
+        <link rel="stylesheet" href="index.html">
+        <link rel="stylesheet" href="index1.html">
+        <link rel="stylesheet" href="index2.html">
+		<link rel="stylesheet" href="index3.html">
+        <link rel="stylesheet" href="index4.html">
+        <link rel="stylesheet" href="index5.html">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,300" rel="stylesheet">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="baba.jpg" alt="brand" id="brand" title="logo of the company">
+            <h1>SCENT</h1>
+            <div class="hamburger-container" onclick="myFunction()">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+            <p id="contact">TelNo. 07459053960</p>
+            <nav>
+                <div class="nav">
+                    <div class="topnav" id="myTopnav">
+                        <a href="./../index.html" class="nav-item" title="home">HOME</a>
+                        <a href="./../men/index.html" class="nav-item" title="mens">MEN</a>
+                        <a href="./../women/index.html" class="nav-item active" title="womens">WOMEN</a>
+                        <a href="./../gift packs/index.html" class="nav-item" title="gifts">GIFTS</a>
+                        <a href="./../offers/index.html" class="nav-item" title="offers">OFFERS</a>
+                        <a href="./../contact/index.html" class="nav-item" title="contact">CONTACT</a>
+                    </div>
+                </div>
+            </nav>         
+        </header>
+		
+		<div id="wrapper">
+			<main>
+				<div class="slideshow-container">
+
+					<!-- Full-width images with number and caption text -->
+					<div class="mySlides fade">
+					  <div class="numbertext">1 / 3</div>
+					  <img src="1.jpg" style="width:100%" title="banner">
+					  <div class="text"></div>
+					</div>
+				  
+					<div class="mySlides fade">
+					  <div class="numbertext">2 / 3</div>
+					  <img src="2.jpg" style="width:100%" title="banner">
+					  <div class="text"></div>
+					</div>
+				  
+					<div class="mySlides fade">
+					  <div class="numbertext">3 / 3</div>
+					  <img src="3.jpg" style="width:100%" title="banner">
+					  <div class="text"></div>
+					</div>
+				  
+					<!-- Next and previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				  </div>
+				  <br>
+				  
+				  <!-- The dots/circles -->
+				  <div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span> 
+				  </div>
+				  
+				  
+					<!-- events -->
+				  <script>
+					  var slideIndex = 1;
+					  showSlides(slideIndex);
+				  
+					  // Next/previous controls
+					  function plusSlides(n) {
+						showSlides(slideIndex += n);
+					  }
+				  
+					  // Thumbnail image controls
+					  function currentSlide(n) {
+						showSlides(slideIndex = n);
+					  }
+				  
+					  function showSlides(n) {
+						var i;
+						var slides = document.getElementsByClassName("mySlides");
+						var dots = document.getElementsByClassName("dot");
+						if (n > slides.length) {slideIndex = 1} 
+						if (n < 1) {slideIndex = slides.length}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none"; 
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex-1].style.display = "block"; 
+						dots[slideIndex-1].className += " active";
+					  }
+					
+				  
+				  </script>
+					<script>
+							var slideIndex = 0;
+						showSlides();
+						
+						function showSlides() {
+							var i;
+							var slides = document.getElementsByClassName("mySlides");
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none"; 
+							}
+							slideIndex++;
+							if (slideIndex > slides.length) {slideIndex = 1} 
+							slides[slideIndex-1].style.display = "block"; 
+							setTimeout(showSlides, 2000); // Change image every 2 seconds
+						}
+						</script>
+				<div class="container">
+					<h3>Perfumes for Women</h3>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="4.jpg" alt="Paco Rabbane Lady Million 125ml" class="image" title="Paco Rabbane Lady Million 125ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Paco Rabbane Lady Million 125ml £70 </p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="5.jpg" alt="CK escape for women 100ml" class="image" title="CK escape for women 100ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">CK escape for women 100ml £32</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="6.jpg" alt="Paco Rabbane Olympea for women 50ml" class="image" title="Paco Rabbane Olympea for women 50ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Paco Rabbane Olympea for women 50ml £62</p>
+						</div>  
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="7.jpg" alt="Paco Rabbane Black XS for women 30ml" class="image" title="Paco Rabbane Black XS for women 30ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Paco Rabbane Black XS for women 30ml £46</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="8.jpg" alt="Ralph Lauren Safari for Women 75ml" class="image" title="Ralph Lauren Safari for Women 75ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Ralph Lauren Safari for Women 75ml £32</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="9.jpg" alt="Davidoff Cool Water Women 100ml" class="image" title="Davidoff Cool Water Women 100ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Davidoff Cool Water Women 100ml £40</p>
+						</div>  
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="10.jpg" alt="Versace Women 50ml" class="image" title="Versace Women 50ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Versace Women 50ml £23</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="11.jpg" alt="Carolina Herrera Good Girl 80ml" class="image" title="Carolina Herrera Good Girl 80ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Carolina Herrera Good Girl 80ml £89.50 </p>
+						</div>  
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="12.jpg" alt="Ed Hardy Villian Women 75 ml" class="image" title="Ed Hardy Villian Women 75 ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Ed Hardy Villian Women 75 ml £20</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="13.jpg" alt="Bruno Banani 40ml" class="image" title="Bruno Banani 40ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Bruno Banani 40ml £11</p>
+						</div>  
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="14.jpg" alt="CK Obsessed for Women 100ml" class="image" title="CK Obsessed for Women 100ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">CK Obsessed for Women 100ml £67.50</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="15.jpg" alt="007 for women 75ml" class="image" title="007 for women 75ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">007 for women 75ml £24.50</p>
+						</div>  
+					</div>
+				</div>
+				<div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>A femme-fatale who wears scent to seduce. Lusting for life and living for the chase. A trail of white (sexy) flowers awakens the skin with fresh notes -that spill over into a dangerous patchouoli.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Calvin Klein Escape for women is a feminine perfume that possesses a fruity floral blend of romance.Top Notes: Apple, Mandarin Orange Heart Notes: Rose, Plum, Peach, Base Notes: Musk, Sandalwood.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>A modern day goddess. Heaven-scent. Iconic, chic. Unique. Half-myth, half-muse. Smiling on victory as her natural reward. Ready to seduce Zeus. Trouble in paradise... A sensual salty-vanilla, earthly, irresistible.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Following only your instinct. Intensely, excessively. Breaking the rules. Capture the moment. Raw emotion, sincerely. Black XS for her. A narcotic-noir flower. Sensual, disturbing. Rebelle. Rock.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Kaufen Sie Safari For Women für sie von Ralph Lauren. Bestellen Sie Parfum und Aftershave von Designermarken.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Experience the fresh sensation of Davidoff Cool Water Woman. Like a modern mermaid emerging from the sea in a wave of freshness, Cool Water Woman captures the essence of sensual, natural beauty. The transparent floral fragrance, sets a mood of sparkling, confident femininity. Fresh, juicy top notes of watermelon and pineapple introduce the delicate energy of a floral accord led by lily of the valley. The Eau de Toilette dries down to a seductive finish of blackcurrant and sensual woods. </p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>This fragrance combines hints of frangipani blossoms with jasmine, bergamot and eglantine. Then comes the fruity tones of plum, raspberry, blue cedar, musk, amber and inoke wood.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Give a girl the right shoes and she can conquer the world… 
+								A sophisticated yet multifaceted fragrance inspired by the duality of the modern woman, GOOD GIRL exemplifies the effortless elegance and wit of the House of Herrera. </p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Ed Hardy Villian is a floral fruity fragrance for women.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>
+								Bruno Banani is a German fashion company with headquarters in Chemnitz.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>As the re-invention of an iconic fragrance, CALVIN KLEIN OBSESSED evokes memory through scent. Mixing memory and desire, masculine and feminine, the past and the present, these compelling fragrances echo the original OBSESSION, yet blur and reformulate scents for both men and women today. </p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>007 for Women is a fragrance inspired by the iconic women found in Bond's seductive and daring world. The fragrance is 'dangerously seductive' itself, with a unique mix of ingredients that blend signature femininity with intangible mystery into a modern interpretation of an oriental fragrance. Oriental fragrance Top Notes: Black pepper, Rose milk Heart Notes: Blackberry, White floral jasmine Base Notes: Vanilla.</p>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer>
+				<div class="copyright">
+					<p>&#169; SCENT Perfumes</p>
+				</div>
+			</footer>
+		</div>
+
+        <script src="./../JavaScript.js">
+        </script>
+    </body>
+</html>

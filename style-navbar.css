@@ -1,0 +1,41 @@
+.hamburger-container {
+    overflow: hidden;
+    float: right;
+    position: relative;
+    top: 26px;
+}
+
+.hamburger-line {
+    border: 3px solid #2f2f2f;
+    background-color: #2f2f2f;
+    border-radius: 5px;
+    margin: 5px;
+    width: 40px;
+}
+
+
+nav {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    position: relative;
+    top: 0;
+    float: right;
+}
+
+.topnav>.nav-item {
+    display: none;
+}
+
+.topnav>.nav-item.active {
+    display: block;
+}
+
+.topnav.responsive {
+    position: relative; 
+    float: none;
+    display: block;
+}
+
+.topnav.responsive>.nav-item {
+    display: block;
+}

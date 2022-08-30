@@ -1,0 +1,323 @@
+﻿
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SCENT</title>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <link rel="stylesheet" href="./../style.css" type="text/css">
+		
+        <link rel="stylesheet" media="screen and (max-width: 820px)" href="./../style-navbar.css" type="text/css">
+		<link rel="stylesheet" media="screen and (max-width: 600px)" href="./../style-mobile.css" type="text/css">
+		<link rel="stylesheet" media="screen and (max-width: 1100px) and (min-width: 800px)" href="./../style-3x.css" type="text/css">
+		<link rel="stylesheet" media="screen and (max-width: 800px)" href="./../style-2x.css" type="text/css">
+        <link rel="stylesheet" href="index.html">
+        <link rel="stylesheet" href="index1.html">
+		<link rel="stylesheet" href="index3.html">
+		<link rel="stylesheet" href="index2.html">
+        <link rel="stylesheet" href="index4.html">
+        <link rel="stylesheet" href="index5.html">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,300" rel="stylesheet">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="baba.jpg" alt="brand" id="brand" title="logo of the company">
+            <h1>SCENT</h1>
+            <div class="hamburger-container" onclick="myFunction()">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+            <p id="contact" title="service number of the company">TelNo. 07459053960</p>
+            <nav>
+                <div class="nav">
+                    <div class="topnav" id="myTopnav">
+                        <a href="./../index.html" class="nav-item" title="home">HOME</a>
+                        <a href="./../men/index.html" class="nav-item active" title="mens">MEN</a>
+                        <a href="./../women/index.html" class="nav-item" title="womens">WOMEN</a>
+                        <a href="./../gift packs/index.html" class="nav-item" title="gifts">GIFTS</a>
+                        <a href="./../offers/index.html" class="nav-item" title="offers">OFFERS</a>
+                        <a href="./../contact/index.html" class="nav-item" title="contact">CONTACT</a>
+                    </div>
+                </div>
+            </nav>         
+        </header>
+		
+		<div id="wrapper">
+			<main>
+				<div class="slideshow-container">
+
+					<!-- Full-width images with number and caption text -->
+					<div class="mySlides fade">
+					  <div class="numbertext">1 / 3</div>
+					  <img src="1.jpg" style="width:100%" title="banner">
+					  <div class="text"></div>
+					</div>
+				  
+					<div class="mySlides fade">
+					  <div class="numbertext">2 / 3</div>
+					  <img src="2.jpg" style="width:100%" title="banner">
+					  <div class="text"></div>
+					</div>
+				  
+					<div class="mySlides fade">
+					  <div class="numbertext">3 / 3</div>
+					  <img src="3.jpg" style="width:100%" title="banner">
+					  <div class="text"></div>
+					</div>
+				  
+					<!-- Next and previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				  </div>
+				  <br>
+				  
+				  <!-- The dots/circles -->
+				  <div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span> 
+				  </div>
+				  
+				  
+				  <!-- events -->
+				  <script>
+					  var slideIndex = 1;
+					  showSlides(slideIndex);
+				  
+					  // Next/previous controls
+					  function plusSlides(n) {
+						showSlides(slideIndex += n);
+					  }
+				  
+					  // Thumbnail image controls
+					  function currentSlide(n) {
+						showSlides(slideIndex = n);
+					  }
+				  
+					  function showSlides(n) {
+						var i;
+						var slides = document.getElementsByClassName("mySlides");
+						var dots = document.getElementsByClassName("dot");
+						if (n > slides.length) {slideIndex = 1} 
+						if (n < 1) {slideIndex = slides.length}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none"; 
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex-1].style.display = "block"; 
+						dots[slideIndex-1].className += " active";
+					  }
+					
+				  
+				  </script>
+<script>
+		var slideIndex = 0;
+	showSlides();
+	
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none"; 
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1} 
+		slides[slideIndex-1].style.display = "block"; 
+		setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+	</script>
+				<div class="container">
+					<h3>Perfumes for Men</h3>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="4.jpg" alt="Paco Rabbane Million 200ml" class="image" title="Paco Rabbane Million 200ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Paco Rabbane Million 200ml £68.95</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="5.jpg" alt="Dior Sauvage 100ml" class="image" title="Dior Sauvage 100ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Dior Sauvage 100ml £66</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="6.jpg" alt="Barbour for Him 60ml" class="image" title="Barbour for Him 60ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Barbour for Him 60ml £64.50</p>
+						</div>  
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="7.jpg" alt="Hugo Boss Bottled Night 100ml" class="image" title="#Hugo Boss Bottled Night 100ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Hugo Boss Bottled Night 100ml £35.95</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="8.jpg" alt="Giorgio Armani He stronger than you 100ml" class="image" title="Giorgio Armani He stronger than you 100ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Giorgio Armani He stronger than you 100ml £98.50</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="9.jpg" alt="Yves Saint Laurent 100ml" class="image" title="Yves Saint Laurent 100ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Yves Saint Laurent 100ml £72</p>
+						</div>  
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="10.jpg" alt="Dior Fahrenheit 200ml" class="image" title="Dior Fahrenheit 200ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Dior Fahrenheit 200ml £48.50</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="11.jpg" alt="Tom Ford Noir 60ml" class="image" title="Tom Ford Noir 60ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Tom Ford Noir 60ml £85.20</p>
+						</div>  
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="12.jpg" alt="Versace Eros 200ml" class="image" title="Versace Eros 200ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Versace Eros 200ml £66</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="13.jpg" alt="Jean Paul Gaulthier 60ml" class="image" title="Jean Paul Gaulthier 60ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Jean Paul Gaulthier 60ml £58</p>
+						</div>  
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="14.jpg" alt="Georgio Armani Code 125ml" class="image" title="Georgio Armani Code 125ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">Georgio Armani Code 125ml £74</p>
+						</div>
+					</div>
+					<div class="scent-box">
+						<div class="image-box">
+							<img src="15.jpg" alt="CK One 25ml" class="image" title="CK One 25ml">
+						</div>
+						<div class="mini-desc">
+							<p style="margin:0">CK One 25ml £19.95</p>
+						</div>  
+					</div>
+				</div>
+				<div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>A fresh spicy leather aftershave that makes you feel like 1 Million dollars. It expresses every man's fantasy for money, cars and women.Top Notes: Grapefruit, Mint, Mandarin Orange Heart Notes: Rose, Cinnamon Base Notes: Leather, Woody, Amber, Patchouli.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>The powerful freshness of Sauvage exudes new sensual and mysterious facets, amply renewing itself with the signature of an ingenious composition. Calabrian bergamot, as juicy and spirited as ever, invites new spicy notes to add fullness and sensuality, as the woody ambery trail of Ambroxan® is wrapped in the smoky accents of Papua New Guinean vanilla absolute for greater virility. François Demachy, Dior Perfumer-Creator, drew inspiration from the desert in the magical hour of twilight.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Created for a man who loves spending time in the British countryside, Barbour translates its active aesthetic into an aromatic eau de toilette. A warm layer of frosted violet leaves and cinnamon are cast on a bed of vetiver, sandalwood and musk, while a burst of grapefruit and hint of black peppercorn enliven this captivating blend. </p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>BOSS Bottled Night is the secret weapon in the BOSS man’s armoury of seduction, instilling him with the same compelling presence that underpins his success by day. A unique composition between elegance and seduction. An intense & spicy scent with a purposeful, edgy, masculine character. Woods are key in the scent: BOSS Bottled Night introduces a scent replica of a rich & exotic new wood, Louro Amarelo. </p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>The aftershave by Emporio Armani, Stronger With You, is a warm, sensual eau de toilette for men. Inspired by a personal love story brought to life through by Paul and Laura through a cinematic series of films.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Y EAU DE PARFUM for men is a light & dark fougère fragrance, featuring fresh citrus and aromatic notes followed by a deeper intensity of sensual woods. It perfectly complements the multifaceted personality traits of the Y man.
+
+								The start of the scent is fresh, a tangy and explosive duet of bergamot and ginger. A freshness contrasted and emphasized by a fruity, juicy and crunchy green apple. Sage and juniper redraw a powerful masculinity boosted by elegant notes of geranium absolute to provide freshness and contrast.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>The original Fahrenheit is a revolutionary modern fragrance with top notes of mandarin, a highly original violet accord and a warm cedar, patchouli and leather drydown. A virile, delicate and rounded fragrance. </p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>AN ORIENTAL, SENSUAL FRAGRANCE THAT CAPTURES MASCULINE DUALITY: ELEGANT AND SENSUAL AT ONCE. A SMOOTH AND LUMINOUS SPICE BOUQUET IS BLENDED WITH MASCULINE FLORALS AND ENVELOPED IN WARM AND CREAMLY LEATHER, RESINS, AMBER AND VANILLA.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Versace Eros Eau de Toilette 200ml. A luminous aura with an intense, vibrant and glowing freshness obtained from the combination of mint leaves, Italian lemon zest and green apple. An addictive sensuality delivered by oriental intriguing and enveloping notes like tonka beans, amber, geranium flower and vanilla. A racy virility symbolised by woods such as cedarwood from Atlas and Virginia. Vetyver and oak moss provide intensity and power.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Jean Paul Gaultier pays tribute to a symbolic figure who has long been a source of inspiration for him: the sailor. Le Mâle, as virile as it is sexy, is a fragrance which offers a nonconformist view of masculinity… a reassuring fragrance with an extremely modern trail. Lavender, evoking the familiar, comforting scent of shaving soap, is enhanced by the sensuality of vanilla.</p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Armani Code for men is a new elegant fragrance launched by design house Giorgio Armani. A sleek, seductive and sophisticated scent. Sexy and masculine for the contemporary man in the know. Top notes of bergamot and lemon. Middle notes of olive flower with base notes of guiac wood and tonka beans. </p>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span> 
+							<p>Cool. Clean. Refreshing. Calvin Klein CK One Eau de Toilette is the original unisex scent from the nineties. Designed to be shared, this fragrance can be worn as a women’s perfume or a men’s aftershave; forever fresh and disruptively modern. </p>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer>
+				<div class="copyright">
+					<p>&#169; SCENT Perfumes</p>
+				</div>
+			</footer>
+		</div>
+
+        <script src="./../JavaScript.js">
+        </script>
+    </body>
+</html>
